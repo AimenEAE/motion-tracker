@@ -26,7 +26,7 @@ cd motion-tracker
 
 ### 2. Run the script
 ```bash
-python motion_tracker.py
+python motiondetection.py
 ```
 
 ### 3. Interact with the application
