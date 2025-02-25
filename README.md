@@ -20,7 +20,7 @@ pip install opencv-python numpy
 ## Usage
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/motion-tracker.git
+git clone https://github.com/mehtadigisha/motion-tracker.git
 cd motion-tracker
 ```
 
