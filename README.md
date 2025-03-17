@@ -40,3 +40,6 @@ python motiondetection.py
 - Uses `cv2.calcOpticalFlowPyrLK` for tracking movement.
 - Updates and draws the motion trail on the frame.
 
+## Output
+https://github.com/user-attachments/assets/72b11f6d-3714-480f-ae26-4bf882e55f6b
+
