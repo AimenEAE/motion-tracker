@@ -1,38 +1,40 @@
 # Motion Tracker
 
-## Overview
-This is a simple motion tracking application using OpenCV and Python. It allows the user to select a point on a video feed, and the system will track its movement using the Lucas-Kanade Optical Flow method. The motion trail of the selected point is visualized on the screen.
+A real-time motion tracking application using OpenCV that tracks user-selected points and saves motion data to CSV files.
 
 ## Features
-- 📷 Uses OpenCV to capture video from the webcam.
-- 🖱 Allows the user to select a point by clicking on the video feed.
-- 🔍 Tracks the selected point's motion using optical flow.
-- 🎨 Draws motion trails to visualize movement.
-- ⏹ Press `ESC` to exit the application.
+- Click to select tracking points on live video feed
+- Real-time motion tracking using Lucas-Kanade Optical Flow
+- Visual motion trails with coordinate display
+- Export tracked motion data to timestamped CSV files
+- Multiple keyboard controls for interaction
 
-## Requirements
-Ensure you have Python installed along with the following dependencies:
-
+## Setup
+1. Install dependencies:
 ```bash
-pip install opencv-python numpy
+pip install -r requirements.txt
 ```
 
-## Usage
-### 1. Clone the repository
-```bash
-git clone https://github.com/mehtadigisha/motion-tracker.git
-cd motion-tracker
-```
-
-### 2. Run the script
+2. Run the application:
 ```bash
 python motiondetection.py
 ```
 
-### 3. Interact with the application
-- Click on the video window to select a point for tracking.
-- The selected point will be tracked with a motion trail.
-- Press `ESC` to exit.
+## Controls
+- **Left Click**: Select a point to track
+- **S**: Save tracked motion data to CSV
+- **C**: Clear motion trail
+- **R**: Reset tracking
+- **ESC**: Exit application
+
+## Data Export
+- Motion data is automatically saved to `motion_data/` directory
+- CSV files include timestamps, elapsed time, and x/y coordinates
+- Files are named with timestamp: `tracked_motion_YYYYMMDD_HHMMSS.csv`
+- Option to save data on exit if tracking data exists
+
+## Output Format
+CSV columns: `timestamp`, `time_elapsed_seconds`, `x_coordinate`, `y_coordinate`
 
 ## Code Explanation
 - Captures video from the webcam using OpenCV.
